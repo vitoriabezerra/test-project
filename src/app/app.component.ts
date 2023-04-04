@@ -22,12 +22,16 @@ export class AppComponent {
     }
 
     confirm(): void {
-        this.message = 'Sim'
+        this.message = 'Clicou em sim'
         this.modalRef?.hide()
     }
 
     decline(): void {
-        this.message = 'Não'
+        this.message = 'Clicou em não'
         this.modalRef?.hide()
+    }
+
+    onValueChange(value: any): void {
+        console.log('date', value)
     }
 }

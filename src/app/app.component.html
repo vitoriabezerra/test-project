@@ -1,4 +1,4 @@
-
+<h1> Ngx Bootstrap</h1>
 <p>Botão vazio</p>
 <button
   type="button"
@@ -55,7 +55,29 @@
 <ng-template #template>
   <div class="modal-body text-center">
     <p>Do you want to confirm?</p>
-    <button type="button" class="btn btn-default" (click)="confirm()" >Yes</button>
-    <button type="button" class="btn btn-primary" (click)="decline()" >No</button>
+    <button type="button" class="btn btn-default" (click)="confirm()" >Sim</button>
+    <button type="button" class="btn btn-primary" (click)="decline()" >Não</button>
   </div>
 </ng-template>
+
+<hr>
+<p>DatePicker</p>
+<div class="row">
+  <div class="col-xs-6 col-12 col-md-4 form-group mb-3">
+    <input type="text"
+           placeholder="Datepicker"
+           class="form-control"
+           bsDatepicker
+           (bsValueChange)="onValueChange($event)">
+  </div>
+  <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+    <input type="text"
+           placeholder="Daterangepicker"
+           class="form-control"
+           bsDaterangepicker>
+           (bsValueChange)="onValueChange($event)">
+  </div>
+</div>
+
+
+<h1>Prime ng</h1>
